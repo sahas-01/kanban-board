@@ -5,9 +5,15 @@ function App() {
 
  const[data, setData] = useState([]);
 
- fetch("https://api.quicksell.co/v1/internal/frontend-assignment")
-  .then((response) => response.json())  
-  .then((data) => setData(data));
+ try{
+    fetch(process.env.REACT_APP_API_URL)
+    .then(res => res.json())
+    .then(data => setData(data))
+ }
+  catch(err){
+    console.log(err);
+  }
+
   console.log(data);
 
   return (
