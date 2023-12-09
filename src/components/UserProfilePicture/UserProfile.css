@@ -1,0 +1,52 @@
+.circularimg {
+
+    position: relative;
+    border-radius: 50%;
+
+    height: 1.2em;
+    width: 1.2em;
+}
+
+
+.randomIcon {
+    border-radius: 100%;
+    object-fit: inherit;
+    height: 1.2em;
+    width: 1.2em;
+}
+
+.maindivicon {
+
+    display: flex;
+    height: 1.2em;
+    width: 1.2em;
+    position: relative;
+
+    margin-right: 0.9em;
+    margin-left: 0.2em;
+    object-fit: contain;
+}
+
+.actively1 {
+    height: .4em;
+    width: .4em;
+    border: 2px solid white;
+    position: absolute;
+    border-radius: 50%;
+
+
+    bottom: 0;
+    right: 0;
+}
+
+.actively2 {
+    height: .4em;
+    width: .4em;
+    border: 2px solid white;
+    position: absolute;
+    border-radius: 50%;
+
+
+    bottom: 0;
+    right: 0;
+}
