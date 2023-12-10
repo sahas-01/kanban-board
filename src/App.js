@@ -118,7 +118,16 @@ const App = () => {
         </div>
       )
       }
-      
+      <div className="view-info" >
+        {
+          passingData &&
+          Object.keys(passingData).map(
+            index =>
+              <Sections key={index} index={index} ticketData={ticketData} passingData={passingData} groupBy={groupBy} />
+          )
+        }
+
+      </div>
     </div >
   );
 };
